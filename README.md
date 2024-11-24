@@ -4,7 +4,7 @@ This is a personal website
 # Personal  Portfolio Website
 
 #### By Issa Mohamed Abdullahi
-<!-- ##### [Site] (https://.github.io/Quizapp/) -->
+<!-- ##### [Site] (https://issadiinow.github.io/phase-0-personal-portfolio-website/) -->
 
 
 ## Table of Content
@@ -34,7 +34,6 @@ This is a Personal Portfolio Website that I used to practice HTML and CSS
 
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML)
-* [MarkedJs](https://marked.js.org/)
 
 ## Authors Info
 Can be reached by the email below for questions and comments 
