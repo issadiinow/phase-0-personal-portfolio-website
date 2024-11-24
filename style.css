@@ -2,37 +2,144 @@ body {
     padding: 0;
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
 }
 
 .nav-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem 3rem;
-    background-color: #f8f9fa; /* Light background for contrast */
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #f8f9fa;
+    position: relative;
 }
 
 .nav-list {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style: none; /* Removes default bullet points */
+    gap: 1.5rem;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
 .nav-list li {
-    margin: 0 1rem; /* Adds spacing between list items */
+    margin: 0;
 }
 
 .nav-list a {
     text-decoration: none;
-    color: #333; /* Neutral text color */
+    color: #333;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .nav-list a:hover {
-    color: #007bff; /* Highlight on hover */
+    color: #007bff;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-list {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        background-color: #f8f9fa;
+        width: 100%;
+        text-align: center;
+        display: none; /* Initially hidden */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-list.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+.hero-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space out content */
+    padding: 2rem;
+    gap: 2rem;
+    
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 60%;
+    padding: 1rem;
+    margin: 0;
+}
+
+.content h2 {
+    font-family: "Poppins", sans-serif; /* Ensure fallback font */
+    font-weight: 600; /* Adjusted weight for better emphasis */
+    font-size: 2rem;
+    color: #333;
+}
+
+.content h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.content p {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #666;
+}
+
+.hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.hero-img img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px; /* Rounded corners for a softer look */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hero-container {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center;
+    }
+
+    .content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-img img {
+        max-width: 200px; /* Adjust image size on smaller screens */
+    }
 }
