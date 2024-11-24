@@ -119,6 +119,7 @@ body {
     justify-content: center;
     align-items: center;
     flex: 1;
+    border-radius: 50%;
 }
 
 .hero-img img {
@@ -143,3 +144,94 @@ body {
         max-width: 200px; /* Adjust image size on smaller screens */
     }
 }
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.profile-container {
+    position: relative;
+    width: 400px;
+}
+
+.profile-circle {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 2rem;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 300px;
+}
+
+.content {
+    flex: 1;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.content p {
+    margin-bottom: 1rem;
+    color: #b3b3b3;
+}
+
+.highlight {
+    color: #4a9eff;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+}
+
+.scroll-indicator {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.scroll-circle {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.scroll-arrow {
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 6px;
+    transform: rotate(45deg);
+}
+
