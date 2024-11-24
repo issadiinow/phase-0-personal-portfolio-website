@@ -4,7 +4,7 @@ This is a personal website
 # Personal  Portfolio Website
 
 #### By Issa Mohamed Abdullahi
-<!-- ##### [Site] (https://muhamaddiis.github.io/Quizapp/) -->
+<!-- ##### [Site] (https://.github.io/Quizapp/) -->
 
 
 ## Table of Content
